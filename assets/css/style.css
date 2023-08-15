@@ -19,9 +19,21 @@
 button{
     margin: 0;
     position: absolute;
-    left: 50%;
+    left: 49%;
     padding: 1em;
     font-size: 1em;
     color: #fff;
     background-color: #333;
+    cursor: pointer;
+}
+.quiz-questions{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 100px;
+    height: 200px;
+}
+.question-display{
+    font-size: 30px;
 }
