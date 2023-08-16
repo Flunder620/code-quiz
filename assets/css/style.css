@@ -16,7 +16,7 @@
 .title{
     text-align: center;
 }
-button{
+.start-button{
     margin: 0;
     position: absolute;
     left: 49%;
@@ -36,4 +36,7 @@ button{
 }
 .question-display{
     font-size: 30px;
+}
+.hide{
+    display:none;
 }
