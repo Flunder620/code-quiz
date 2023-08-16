@@ -7,25 +7,25 @@ var currentQuestion = 0
 var seconds = 60;
 
 startButton.addEventListener("click", startGame);
-
+//list of questions
 var questions =[
     {
-        title:"HTML",
-        choices:["test a", "test b", "test c"],
-        answer:"test a"
+        title:"What does HTML stand for?",
+        choices:["HyperText Markup Language", "HyperText Markdown Language", "HyperText Market Language"],
+        answer:"HyperText Markup Language"
     },
     {
-        title:"HTML 2",
+        title:"Waht does CSS stand for?",
         choices:["test a", "test b", "test c"],
         answer:"test b"
     },
     {
-        title:"HTML 3",
+        title:"How do you add jQuery?",
         choices:["test a", "test b", "test c"],
         answer:"test c"
     }
 ]
-
+//validates if answerr is correct 
 function checkAnswer(){
     console.log(this.dataset.value)
     if(this.dataset.value ===questions[currentQuestion].answer){
@@ -40,14 +40,14 @@ function checkAnswer(){
     }
     renderQuestions()
 }
-
+//ends the game
 function endGame(){
     console.log("End Game")
     initalsQuestions.classList.remove("hide")
     quizQuestions.classList.add("hide")
 
 }
-
+//displays questions
 function renderQuestions(){
     questionTitle.textContent = questions[currentQuestion].title
     questionChoice.textContent = ""
@@ -60,12 +60,12 @@ function renderQuestions(){
         questionChoice.appendChild(button)
     }
 }
-
+//begins the gmae
 function startGame(){
     timer()
     renderQuestions()
 }
-
+//timer 
 function timer(){
 
     var timer = setInterval (function(){
