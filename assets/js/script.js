@@ -16,13 +16,13 @@ var questions =[
     },
     {
         title:"Waht does CSS stand for?",
-        choices:["test a", "test b", "test c"],
-        answer:"test b"
+        choices:["Cascading Styling Sheets", "Cascading Style Sheets", "Cascaded Style Sheets"],
+        answer:"Cascading Style Sheets"
     },
     {
-        title:"How do you add jQuery?",
-        choices:["test a", "test b", "test c"],
-        answer:"test c"
+        title:"Which tag do you use to link Javascript",
+        choices:["Anchor tag", "Link tag", "Script tag"],
+        answer:"Script tag"
     }
 ]
 //validates if answerr is correct 
@@ -45,7 +45,7 @@ function endGame(){
     console.log("End Game")
     initalsQuestions.classList.remove("hide")
     quizQuestions.classList.add("hide")
-
+    
 }
 //displays questions
 function renderQuestions(){
